@@ -86,9 +86,9 @@ the page's `.ornament` logo** (same paths, tendrils, 1.4px stroke and 0.18 fill-
 `currentColor` replaced by `--gold-soft` `#cda863` and the viewBox cropped to the mark. Do not
 simplify or restyle it. [assets/icons/](assets/icons/) holds `icon-source.svg` (the source) and an
 identical `favicon.svg`, plus exports: `favicon.ico` (16 + 32), `icon-192.png`, `icon-512.png`
-(transparent), and `apple-touch-icon.png` (180) and `icon-maskable-512.png` (the logo centred on an
-opaque cream `#fbf6ef` square — iOS fills transparency with black, and the maskable one needs a
-full-bleed background with the mark inside the ~80% safe zone). A byte-identical `favicon.ico` also
+(transparent), and `apple-touch-icon.png` (180) and `icon-maskable-512.png`, both the logo centred
+on an opaque cream `#fbf6ef` square — iOS fills transparency with black, and the maskable one also
+needs a full-bleed background with the mark inside the ~80% safe zone. A byte-identical `favicon.ico` also
 sits at the repo root so the default `/favicon.ico` request never 404s, and
 [site.webmanifest](site.webmanifest) lists the PNGs. They're wired by plain `<link>` /
 `<meta name="theme-color">` tags in `index.html`'s `<head>` — no JS, so it works from `file://`. The
