@@ -16,6 +16,12 @@ right now it's very early.
   language and renders the translated text.
 - **`assets/flags.js`** — hand-drawn SVG flag icons shown in the language
   switcher, keyed by locale code.
+- **`assets/icons/`, `favicon.ico`, `site.webmanifest`** — the browser-tab /
+  home-screen icon — an exact copy of the page's logo (SVG favicon, ICO
+  fallback, Apple touch icon, 192/512 and maskable PNGs). `assets/icons/icon-source.svg` is the
+  source; the PNGs and ICO are exports, re-rendered from it with any SVG
+  rasteriser (the root `favicon.ico` is a copy of the one in `assets/icons/`).
+  The icon is static and not localized.
 - **`scrapped/charmlanecollection.md`** — a scraped copy of
   charmlanecollection.com, kept only as design/content reference for the real
   storefront. Not code, and not meant to be copied verbatim.
